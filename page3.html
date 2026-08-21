@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Perspektif</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Container dengan mode grayscale awal (akan mekar berwarna saat bunga di-tap) -->
+  <main class="container perspective-page grayscale-mode" id="perspective-container">
+    <div class="page-indicator">03 / 07 &bull; Warna</div>
+
+    <section>
+      <h1>Sebelum dan setelah mengenalmu.</h1>
+      <p>
+        Dulu hari-hariku terasa biasa saja, datar dan seringkali abu-abu. Sampai akhirnya aku mengenalmu—seseorang yang punya dunia kecilnya sendiri yang hangat dan begitu berharga.
+      </p>
+    </section>
+
+    <!-- Interaksi Bunga (Tap/Klik untuk memberi warna) -->
+    <div class="flower-interaction-box" id="flower-interactive-box" role="button" aria-label="Sentuh bunga untuk mewarnai">
+      <div class="flower-slot">
+        <img src="assets/images/flower.png" 
+             onerror="this.onerror=null; this.src='assets/images/flower.svg';" 
+             alt="Bunga">
+      </div>
+      <div class="tap-hint" id="tap-hint">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+        </svg>
+        <span>(Coba sentuh bunga ini sebentar)</span>
+      </div>
+    </div>
+
+    <!-- Teks yang muncul setelah bunga di-tap -->
+    <div class="color-revelation-text" id="color-revelation-text">
+      <p>
+        Kehadiranmu pelan-pelan memberi warna baru di duniaku. Hal-hal sederhana seperti ceritamu soal harimu, tingkah lucu yang kamu temui, atau caramu tertawa dari balik layar HP... semuanya membuat hari-hariku jauh lebih hidup.
+      </p>
+      <p class="muted">
+        Dan aku baru benar-benar mengerti betapa berharganya warna itu justru saat semuanya mulai meredup karena keegoisanku.
+      </p>
+    </div>
+
+    <div class="nav-bottom">
+      <a href="page4.html" class="btn-primary">
+        <span>Lanjutkan</span>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

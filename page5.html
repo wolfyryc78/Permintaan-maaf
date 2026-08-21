@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Penentuan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="container">
+    <div class="page-indicator">05 / 07 &bull; Penentuan</div>
+
+    <div class="decision-box">
+      <!-- Pertanyaan Utama -->
+      <h1>Kalau kamu berkenan, bolehkah kita mulai lagi dari awal?</h1>
+      
+      <p class="muted">
+        Nggak perlu terburu-buru, pelan-pelan saja. Aku sungguh ingin belajar memahami duniamu dengan lebih sabar, tulus, dan dewasa.
+      </p>
+
+      <!-- Pilihan Tombol Ya / Tidak -->
+      <div class="decision-actions">
+        <button id="btn-yes" class="btn-primary" type="button">
+          Ya, kita coba lagi
+        </button>
+        <button id="btn-no" class="btn-secondary" type="button">
+          Tidak
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Overlay Loading Halus Saat Mengirim Data -->
+  <div class="sending-overlay" id="sending-overlay">
+    <div class="spinner"></div>
+    <p class="muted" style="font-size: 0.9rem;">Menyimpan jawabanmu...</p>
+  </div>
+
+  <script src="js/tracker.js"></script>
+</body>
+</html>
